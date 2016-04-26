@@ -24,7 +24,8 @@ def main():
      	#for keys,values in columnMap.items():
        # 	print(keys),":",(values)
      
-	
+	#reading possible query templates from file
+	queryFile = open("PossibleQueries")
 	
 	#reading possible table values from file
 	tableFile = open("PossibleTables")
@@ -33,8 +34,6 @@ def main():
 		columns = columnMap[tables[0]]
                 columnList = columns.split(',')
 		for z,col in enumerate(columnList):
-			#reading possible query templates from file
-			queryFile = open("PossibleQueries")
 		        for y, line in enumerate(queryFile):
 				if "column" in line:
 					q1 = line.replace("column",col)
