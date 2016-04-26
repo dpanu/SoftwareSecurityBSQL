@@ -1,0 +1,4 @@
+Customer: id, name, email, contact, phone, address, username, password, firstname, lastname, age
+Department: id, women, shoes, men, clothes, devices, maps, t-shirts, books 
+Item: id, price, cost, name, vendor, dimensions 
+Category: id, women, shoes, men, clothes, devices, maps 

