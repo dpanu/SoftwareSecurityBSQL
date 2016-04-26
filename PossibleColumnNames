@@ -16,6 +16,7 @@ Event:eventid,id,location,time,timing,day,date
 Events:eventid,id,location,time,timing,day,date
 Users:username,userid,id,firstname,lastname,surname,email,contact,phone,address,password,passwd
 Book:bookid,id,author,publication,year,launch,type
+Books:bookid,id,author,publication,year,launch,type
 Account:type,balance
 Accounts:type,balance
 Feature:featurename,name,id,featureid,description

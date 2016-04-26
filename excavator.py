@@ -15,7 +15,7 @@ def main():
      #reading possible column values from file into HashMap
      columnMap ={}
      try:
-	os.chdir("/home/ssonawane/Desktop/SoftwareSecurityBSQL")
+	os.chdir("/home/swetasinghal28/cse545/SoftwareSecurityBSQL")
 	columnFile = open("PossibleColumnNames")
 	for x, line in enumerate(columnFile):
 		possibleColumns = line.split(':')
@@ -40,10 +40,10 @@ def main():
 					q1 = line.replace("column",col)
 				if "table" in line:
 					if "column" in line:
-						q2 = q1.replace("table",possibleTable)
+						q2 = q1.replace("table",tables[0])
 						print q2
 					else:
-						q2 = line.replace("table",possibleTable)
+						q2 = line.replace("table",tables[0])
 						print q2
                                         
 				if (not("column" in line) and not("table" in line)):
