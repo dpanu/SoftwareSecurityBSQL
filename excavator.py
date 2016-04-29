@@ -24,7 +24,7 @@ def main(argv, req=None):
     # reading possible column values from file into HashMap
     columnMap = {}
     try:
-        os.chdir("/home/swetasinghal28/cse545/SoftwareSecurityBSQL")
+    os.chdir("~/SoftwareSecurityBSQL")
         columnFile = open("PossibleColumnNames")
         for x, line in enumerate(columnFile):
             possibleColumns = line.split(':')
